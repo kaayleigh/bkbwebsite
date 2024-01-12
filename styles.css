@@ -1,0 +1,643 @@
+/*---------------------------- All elements ---------------------------*/
+* {
+  box-sizing: border-box;
+}
+/*------------------------ Structural elements ------------------------*/
+body{
+  font-family: Arial, sans-serif;
+  background-color: #0A1828;
+  color: #BFA181;
+  margin: 0 auto;
+  max-width: 100%;
+}
+footer{
+  margin-top: 45px;
+}
+/*--------------------------- Text elements --------------------------*/
+/* Text Elements */
+h1, h3, h4{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+/*------------------------------ Links -------------------------------*/
+.nav-links a{
+  margin: 0 15px;
+  color: #178582;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover{
+  color: #BFA181;
+}
+.book-button a{
+  text-decoration: none;
+  color: #0a1828;
+  font-weight: bold;
+}
+.book-button a, .index-more-button a, .explorebtn a{
+  padding: 10px 20px;
+  background-color: #BFA181;
+  color: #0A1828;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+/*-------------------------- Class styles ............................*/
+/* navigation class styles */
+.book-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+.cart{
+  margin-right: 10px;
+}
+.cart i{
+  font-size: 25px;
+  color: #bfa181;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #0A1828;
+}
+.logo{
+  margin-right: 10px;
+}
+.logo img{
+  max-height: 85px;
+  padding-top: 2px;
+}
+.nav-links{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.book-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+/* banner class styles */
+.banner{
+  position: relative;
+  margin-bottom: 3%;
+}
+.slogan, .subscribe{
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+}
+.slogan{
+  top: 25%;
+  left: 5.5%;
+}
+.slogan h1{
+  margin-bottom: 10px;
+  font-size: 3em;
+  max-width: 100%;
+} 
+.subscribe{
+  top: 50%;
+  left: 25%;
+}
+.subscribe h2{
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+.subscribe input{
+  padding: 3px 20px 5px;
+  margin-bottom: 10px;
+}
+.subscribe button{
+  padding: 8px 15px;
+  background-color: #BFA181;
+  color: #0A1828;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.bannerinfo{
+  width: 100%;
+  background-color: #178582;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+.bantxt{
+  color: #ffffff;
+  font-size: 1em;
+  padding-left: 5.5%;
+}
+/* Index - Homepage Services class styles */
+.index-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.index-card{
+  background-color: #ffffff;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid #BFA181;
+}
+.card-image{
+  flex: 0 0 50%;
+  position: relative;
+  width: 100%;
+}
+.card-img, .product-image, .service-hire-image{
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #BFA181;
+}
+.index-card-text{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 10px 15px 1px 15px;
+  padding-bottom: 0;
+}
+.index-card-text p{
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 0 1px;
+}
+/* Bike-Hire Section/Bike-Services - Section class styles */
+/*---Page info---*/
+.product-info, .reviews{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  color: #178582;
+  margin: 3% 20%;
+}
+.info-text{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.info-text ul{
+  text-align: left;
+  padding-left: 40%;
+  padding-right: 25%;
+}
+/*---Bike Hire/Servicing Pages---*/
+.service-hire-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 1150px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.service-hire-card{
+  background-color: #ffffff;
+  width: 30%;
+  box-sizing: border-box;
+  border: 1px solid #BFA181;
+  text-align: center;
+}
+.service-hire-text h3{
+  margin-bottom: 10px;
+  color: #178582;
+}
+.service-hire-text{
+  padding: 10px 15px;
+  text-align: center;
+}
+.service-hire-text ul{
+  padding-left: 40px;
+}
+/* Shop/Special Offers/Gallery - class styles */
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 1150px;
+  margin: 0 auto;
+}
+.product-card{
+  background-color: #ffffff;
+  width: 45%;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  border: 1px solid #BFA181;
+  text-align: center;
+  margin-bottom: 1%;
+}
+.product-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 15px;
+}
+.product-text h3{
+  margin-bottom: 10px;
+  color: #178582;
+}
+.product-text p, .service-hire-text p{
+  margin-top: 0;
+  padding: 0 10px;
+  text-align: justify;
+  color: #BFA181;
+}
+.product-features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  text-align: left;
+}
+.product-text h4{
+  color: #178582;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.product-features ul, .product{
+  text-align: left;
+  padding: 0;
+  margin-top: 0;
+}
+/*Contact Page - class styles*/
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  color: #178582;
+  margin: 3% 20%;
+}
+.contact-options{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-left: 60px;
+}
+.contact-options p{
+  text-align: center;
+  padding: 50px;
+  padding-top: 0;
+}
+.enquiry{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.enquiry-form{
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #BFA181;
+  box-shadow:#1a1f24 0 0 10px ;
+}
+.enquiry-form h4{
+  text-align: center;
+  color: #178582;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+.enquiry-input{
+  width: 100%;
+  color: #178582;
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #BFA181;
+  border-radius: 3px;
+}
+.enquiry-input textarea{
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  border: 1px solid #178582;
+  border-radius: 3px;
+  resize: vertical;
+}
+.enquiry-submit-button{
+  background-color: #BFA181;
+  color: #0A1828;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/*---Reviews Section---*/
+.triplogo1{
+  width: 60%;
+  margin-left: 15%;
+  margin-right: 0;
+}
+.reviews-text{
+  margin-right: 15%;
+  text-align: center;
+  max-width: 100%;
+}
+/*---Expore-More Section---*/
+.explore{
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  background-color: #ffffff;
+  color: #178582;
+  text-align: center;
+}
+.exploresplit{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.exploreitem{
+  text-align: center;
+}
+.exploreitem h3{
+  margin-bottom: 5px;
+}
+.exploreitem img{
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+/*---Footer Section---*/
+.footinfo{
+  background-color: #178582;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+}
+.sub-socials{
+  text-align: center;
+  color: #178582;
+  padding-bottom: 20px;
+}
+.subscribe-footer input{
+  padding: 3px 20px 5px;
+  margin-bottom: 10px;
+}
+.socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.smicons{
+  padding-right: 5px;
+}
+.socials .smicons i{
+  font-size: 50px;
+  color: #BFA181;
+}
+.sub button{
+  padding: 8px 15px;
+  background-color: #BFA181;
+  color: #0A1828;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/*___________________MEDIA QUERIES___________________*/
+@media screen and (max-width: 650px){
+  p{
+    font-size: 1.1em;
+  }
+  /* navigation */
+  .navbar{
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+  }
+  .book-button{
+      align-self: flex-end;
+  }
+  .nav-links{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+  }
+  .book-button{
+      position: absolute;
+      top: 40px;
+      right: 15px;
+      margin-top: 5px;
+      font-size: 0.7em;
+  }
+  /* banner */
+  .banner{
+      flex-direction: column;
+      margin-bottom: 5%;
+  }
+  .slogan{
+      position: absolute;
+      top: 0%;
+  }
+  .slogan h1{
+      font-size: 1em;
+      text-align: left;
+      margin-top: 10%;
+  }
+  .subscribe{
+      position: absolute;
+      top: 20%;
+      left: 10.5%;
+  }
+  .subscribe h2{
+      font-size: 0.9em;
+  }
+  .subscribe input{
+      padding: 0.1px 1px;
+      margin-bottom: 5px;
+      width: 60%;
+  }
+  .subscribe button{
+      padding: 5px 10px;
+      width: 25%;
+      font-size: 0.6em;
+  }
+  .bannerinfo{
+      width: 100%;
+      background-color: #178582;
+      font-size: 0.7em;
+      margin-top: 10px;
+  }
+  .bantxt{
+      color: #ffffff;
+      font-size: 1em;
+  }
+  /* shared font-size */
+  .product-info, .hire-info, .index-card-text, .service-hire-text, .contact-info, .product-text, .reviews-text, .explore{
+      font-size: 0.6em;
+  }
+  /* index, hire/service, shop/special-offers/gallery card widths */
+  .index-container, .service-hire-container, .product-container{
+      max-width: 475px;
+  }
+  .index-card-text, .service-hire-text, .product-text{
+    padding-top: 0;
+    text-align: center;
+  }
+.index-card-text h3, .service-hire-text h3, .product-text h3{
+    margin-bottom: 0.3px;
+    margin-top: 0;
+  }
+.index-card-text, .service-hire-text, .product-text p{
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+  /* index page */
+  .index-card{
+      flex-direction: row;
+      margin-right: 1%;
+      margin-left: 1%;
+  }
+  .index-card-text{
+      padding-bottom: 0;
+      margin-bottom: 0;
+  }
+  .index-card-text p{
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: center;
+  }
+  .index-more-button{
+    margin-top: 10px;
+  }
+  .index-more-button a{
+    padding: 2px 8px;
+  }
+  .bkb-poster{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .poster{
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #178582;
+  }
+  /* hire/service, shop/special-offers/gallery pages */
+  /*---page info---*/
+  .info-text ul{
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 0;
+  }
+  .service-hire-container, .product-container{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1px;
+  }
+  .service-hire-card,.product-card{
+    width: 45%;
+    margin-bottom: 5px;
+  }
+  .service-hire-text ul, .product-text ul{
+    padding-left: 25px;
+  }
+  .service-hire-card{
+  padding-bottom: 5px;
+  }
+  .product-card{
+    max-width: 90%;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  /* contact page */
+  .contact-options{
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  .contact-options p{
+    text-align: center;
+    padding: 15px;
+  }
+  .enquiry-form{
+    max-width: 75%;
+    font-size: 0.8em;
+  }
+  .enquiry-input{
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .enquiry-input rw {
+  font-size: 2em;
+  }
+  .enquiry-submit-button{
+    width: 100%;
+    font-size: 1em;
+  }
+  /*---reviews section---*/
+  .reviews{
+      padding: 5px;
+      margin: 5% 5% 5% 5%;
+      flex-direction: row;
+  }
+  .triplogo1{
+      padding: 5px;
+      max-width: none;
+      width: 800px;
+      margin: 0;
+      margin-bottom: 5px;
+  }
+  .triplogo2{
+    align-items: center;
+    width: 100%;
+  }
+  .reviews-text{
+      padding-right: 25px;
+      margin: 0;
+      max-width: none;
+      width: 120%;
+      justify-content: center;
+      padding-bottom: 0;
+  }
+  /*---footer section---*/
+  footer{
+      margin-top: 25px;
+      font-size: 0.7em;
+  }
+  .sub button{
+      padding: 6.5px 8px;
+      width: 15%;
+      font-size: 0.8em;
+  }
+  .socials .smicons i{
+      font-size: 30px;
+  }
+}
